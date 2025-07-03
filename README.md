@@ -74,5 +74,20 @@ That CEO is declared **Supreme Corporate Overlord™**.
 
 ---
 
-> "It's not personal. It's just business."  
+> "It's not personal. It's just business."
 > – You, probably, after acquiring your best friend.
+
+## Development
+
+1. Install Python dependencies with `pip install -r requirements.txt`.
+2. Install frontend dependencies:
+   ```bash
+   cd frontend
+   npm install
+   ```
+3. Run tests:
+   ```bash
+   pytest -q
+   npx vitest run
+   ```
+4. Start the Flask server with `python -m corp_game.server` and, in another terminal, run `npm run dev` to serve the React UI.
